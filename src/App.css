@@ -1,38 +1,485 @@
+
 .App {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 100px;
+
+}
+.collage{
+  width: 100%;
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) ;
+  gap: 30px;
+  grid-template-rows: repeat(2, 1fr);
+ 
+}
+.item {
+}
+.item-1 {
+  width: 47.5;
+  height: 450px;
+  
+  grid-column: 1/ span 2;
+  grid-row: 1/span 3;
+}
+.shortRibs {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  
+}
+.item-2 {
+  height: 200px;
+  width: 100%;
+  grid-row: 1/ span 1;
+  grid-column: 3/ span 1;
+}
+.lasagna {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  filter: brightness(1.1)
+}
+.item-3 {
+  grid-column: 4/ span 1;
+  height: 200px;
+  grid-row: 1 / span 1;
+}
+.nachos{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  filter:brightness(1.1);
+  
+}
+.btn-light{
+  margin-top: 10px;
+  padding: 15px 50px 15px 50px;
+   
+}
+.item-4 {
+  
+  grid-row: 2/span1;
+  grid-column: 3/span 2;
+  height: 220px;
+}
+.chicken {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(1.1)
+}
+.item-5 {
+  height: 200px;
+  width: 350px;
+  font-family: 'FuturaPT','Helvetica Neue',Helvetica,Arial,sans-serif;;
+  grid-row: 1/ span 2;
+  grid-column: 2 / span 2;
+  opacity: 85%;
+  background-color: rgba(53,166,151,.8); 
+  color: white;
+  padding: 20px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+  place-self: center;
+}
+.experience {
+  color: #35a697;
+  align-self: center;
+  
+}
+.experience:hover {
+  margin-top: 10px;
+  padding: 15px 50px 15px 50px;
+  background-color: #35a697; 
+  color: white;
+  border: 1px solid white;
+}
+.item-5-text{
+  font-size: 2.5em;
   text-align: center;
+  margin: 5px;
+  color: white;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  padding: 0;
+  margin: 0;
 }
+.underMain {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: flex;
+  column-gap: 5rem;
+  margin-top: 5rem;
+  
 }
+.underMainTitle {
+  font-size: 32px;
+}
+.underMainPic{
+  width: 50vw;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.boxLunchPic {
+  width: 45.7vw;
+  height: 80vh;
+  filter:brightness(1.1)
+}
+underMainP {
+  
+}
+.underMainText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Crimson Text';
+  color: #444;
+  line-height: 28.8px;
+  vertical-align: baseline;
+  
+
+
+}
+.threeCards {
+ 
+  display: flex;
+  column-gap: 30px;
+  margin-top: 6rem;
+  align-items: flex-start;
+}
+.card{
+  padding: 1rem;
+  width: 30vw;
+}
+.blueCard{
+  background-color:#ecf6f5;
+  
+}
+.blueCardTitle{
+  color: #52c0b3;
+  font-size: 18px;
+}
+.orangeCard{
+  background-color: #f7efe6;
+}
+.orangeCardTitle {
+  color: #f79726;
+  font-size: 18px;
+}
+.pinkCard{
+  background-color: #f9f3f3;
+}
+.pinkCardTitle {
+  color: #f26865;
+  font-size: 18px;
+}
+.underCard {
+  
+  margin-top: 6rem;
+  width: 100%;
+}
+p {
+  line-height: 1.8;
+  color: #444;
+  font-size: 100%;
+  font-weight: 500;
+  font-family: "Crimson Text";
+  
+}
+.bottomImage {
+  width: 100%;
+  object-fit: cover;
+}
+.description {
+  margin-bottom: 20em;
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 5rem;
+  background-color: #f9f3f3;
+  vertical-align: baseline;
+  font-family: "Crimson Text", Georgia,serif;
+  line-height: 1.8;
+  text-align: center;
+}
+.descriptionTitle {
+  letter-spacing: 6px;
+  font-size: 32px;
+}
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  border: 0;
+  outline: 0;
+  color: #000000;
+  font-family: 'FuturaPT','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+.underMainTitle {
+  letter-spacing: 6px;
+  line-height: 1.4;
+  font-size: 32px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ===========Footer================= */
+.footer-container {
+  width: 100vw;
+  
+  display: flex;
+  margin-left: -40px;
+  background-color: #ecf6f5;
+  height: 20em;
+  position: relative;
+}
+
+.social {
+  margin-left: 40px;
+  margin-top: 40px;
+  
+}
+
+.contact {
+  width: 45%;
+  height: 22em;
+  position: absolute;
+  right: 60px;
+  top: -60px;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #35a697;
+  
+}
+.contact-title {
+  font-size: 40px;
+  color: #52c0b1;
+  letter-spacing: 3.2px;
+  line-height: 1.5;
+}
+.contact-button {
+font-family: 'FuturaPT','Helvetica Neue',Helvetica,Arial,sans-serif;
+border-radius: 6px;
+display: inline-block;
+font-family: 'FuturaPT','Helvetica Neue',Helvetica,Arial,sans-serif;
+text-transform: uppercase;
+font-size: 14px;
+letter-spacing: 1px;
+line-height: 1;
+padding: 15px 30px;
+cursor: pointer !important;
+transition: all .3s;
+background-color: #35a697;
+color: #fff;
+margin-bottom: 1.5em;
+border: 1px solid #fff;
+}
+.contact-button:hover {
+  color: #35a697;
+  background-color: #fff;
+  border: 1px solid #35a697;
+}
+.phoneNumber {
+  color: #52c0b1;
+  font-family: 'Crimson Text', Georgia, serif;
+  line-height: 1.8;
+}
+.contact-text {
+  color: #000;
+  margin-bottom: 1.5em;
+}
+.socialText {
+  margin-left: 2.5em;
+  margin-bottom: 30px;
+  letter-spacing: 3.2px;
+  font-size: 14px;
+  font-family: 'FuturaPT','Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: #000;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.socialList {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.socialList li {
+  list-style: none;
+}
+.socialList a {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+a:link {
+  color: #35a697;
+  transition: all .3s;
+  text-decoration: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+.socialList img {
+  display: block;
+  width: 20px;
+  height: 20px;
+
+}
+img {
+  
+}
+#linkedin-logo {
+  height: 30px;
+  width: 30px;
+}
+#linkedin {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+.bottom-footer {
+  display: flex;
+  height: 100px;
+  margin-left: 40px;
+  margin-right: 40px;
+  align-items: center;
+}
+.copyright{
+  color: #656e6d;
+  font-family: 'Crimson Text', Georgia, serif;
+  font-size: 14px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.sociaList {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.socialList li {
+  list-style: none;
+}
+
+
+
+.socialList li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+.socialList li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.socialList li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+.socialList li a:hover:before {
+  top: 0;
+}
+
+.socialList li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+.socialList li:nth-child(2) a:before{
+  background: #55acee;
+}
+
+.socialList li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+.socialList li:nth-child(4) a:before {
+  background: #E4405F;
+}
+
+
+/****************************************************************Contact Form */
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding-top: 15px;
+}
+input[type=text], input[type=email], textarea{
+  border: 2px solid #000;
+  border-radius: 3px;
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 10px;
+  
+}
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.contact-container {
+  height: 1000px;
+  background-color: lightgoldenrodyellow;
+  padding: 20px;
+}
+
+.contact-flex {
+  display: flex;
+}
+
+.contact-image {
+  margin-right: auto;
+}
+#message {
+  width: 40vw;
+  height: 20vh;
 }

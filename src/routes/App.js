@@ -14,7 +14,6 @@ class App extends React.Component  {
       <div className="App">
         <Navbar />
         <Main />
-        <ContactForm />
         <Footer />
         
         

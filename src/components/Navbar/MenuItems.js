@@ -19,15 +19,7 @@ export const MenuItems = [
         url: '/contact',
         cName: 'nav-links',
     },
-    {
-        title: 'Order',
-        url: '/contact',
-        cName: 'nav-links',
-    },
+    
 
-    {
-        title: 'Order',
-        url: '/order',
-        cName: 'nav-links-mobile',
-    }
+    
 ]

@@ -11,13 +11,8 @@ class Contact extends React.Component {
                 <Navbar />
                 <div className='contact-flex'>
                     <div className='contact-image'>
+                        <img className="contact-img" src={require("../Images/caterfish.jpg")}></img>
                     
-                        <h1>open space-------------------------------------------------------------------------</h1>
-                        <h1>more space----------------------------------------------------------------</h1>
-                        <h1>open space-------------------------------------------------------------------------</h1>
-                        <h1>more space----------------------------------------------------------------</h1>
-                        <h1>open space-------------------------------------------------------------------------</h1>
-                        <h1>more space----------------------------------------------------------------</h1>
                     </div>
                     <div className='contact-container'>
                         <ContactForm />

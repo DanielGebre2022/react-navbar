@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { MenuItems } from "./MenuItems"
 import './Navbar.css'
 import { Button } from "../Button"
-import {Link} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 
 class Navbar extends Component {
     state = { clicked: false }
@@ -17,7 +17,7 @@ class Navbar extends Component {
         return(
             <nav className="NavbarItems">
                  
-                <img className="s1-logo" src={require("./newlogoblack1B3.png")}></img>
+                <NavLink to='/' className='nav-link' ><a href='' className='logo-link'><img className="s1-logo" src={require("../../Images/newlogoblack1B3.png")}></img></a></NavLink>
                 
                 <div className="menu-icon" onClick={this.handleClick}>
  {/* // below line checks the state to see if hamburger menu is clicked if it is display an x for close.  */}                  
@@ -37,7 +37,7 @@ class Navbar extends Component {
                         )
                     })}
                 </ul>
-               { /* <Button>ORDER</Button> */ }
+               
             </nav>
         )
     }

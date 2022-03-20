@@ -6,26 +6,26 @@ export default function Main() {
         <div class="container">
             <div className="collage">
                 <div className="item item-1">
-                    <img className="chicken" src={require("./chicken.jpg")}></img>
+                    <img className="chicken" src={require("../Images/chicken.jpg")}></img>
                 </div>
                 <div className="item item-2">
-                    <img className="lasagna" src={require("./lasagna.jpg")}></img>
+                    <img className="lasagna" src={require("../Images/lasagna.jpg")}></img>
                 </div>
                 <div className="item item-3">
-                    <img className="nachos" src={require("./nachos.jpg")}></img>
+                    <img className="nachos" src={require("../Images/nachos.jpg")}></img>
                 </div>
                 <div className="item item-4">
-                    <img className="shortRibs" src={require("./gb_2005-110.jpeg")}></img>
+                    <img className="shortRibs" src={require("../Images/gb_2005-110.jpeg")}></img>
                 </div>
                 <div className="item item-5">
                     <h3 className="item-5-text">EXPERIENCE</h3>
-                    <h3 className="item-5-text">S1</h3>
+                    <h3 className="item-5-text" id='S1'>S1</h3>
                     <button type="button" class="btn btn-light experience">EXPLORE</button>
                 </div>
             </div>
             <div className="underMain">
                 <div className="underMainPic">
-                    <img className="boxLunchPic" src={require("./box-lunch.jpg")}></img>
+                    <img className="boxLunchPic" src={require("../Images/box-lunch.jpg")}></img>
                 </div>
                 <div className="underMainText">
                     <h2 className="underMainTitle">Premier Catering</h2>
@@ -50,7 +50,7 @@ export default function Main() {
 
             </div>
             <div className="underCard">
-                <img className="bottomImage"  src={require("./enhanceschick.jpg")}></img>
+                <img className="bottomImage"  src={require("../Images/enhanceschick.jpg")}></img>
             </div>
             <div className="description">
                 <h1 className="descriptionTitle">Our Catering Services</h1>
